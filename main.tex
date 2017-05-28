@@ -1,0 +1,30 @@
+\RequirePackage[l2tabu, orthodox]{nag}
+
+\documentclass[twopages, a4paper]{book}
+
+\input{lib/packages.tex}
+\input{lib/macros.tex}
+
+\begin{document}
+
+\renewcommand{\refname}{References}
+\renewcommand{\bibname}{References}
+
+\frontmatter
+
+\input{src/00_title.tex}
+\input{src/00_preface.tex}
+\input{src/00_acknowledgments.tex}
+
+\tableofcontents
+
+\mainmatter
+
+\input{src/01_introduction.tex}
+
+\backmatter
+
+\bibliographystyle{abbrvnat}
+\bibliography{lib/biblio}
+
+\end{document}

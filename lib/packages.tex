@@ -1,0 +1,71 @@
+\usepackage[a4paper]{geometry}
+
+% Latin Modern font is an enhanced version of the default Computer Modern font
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+
+% UTF-8 encoding makes life easier
+\usepackage[utf8]{inputenc}
+
+% manuscript is written in British English (used for hyphenation)
+\usepackage[british]{babel}
+
+% shrink and stretch fonts for a good looking manuscript
+\usepackage[activate={true, nocompatibility}, final, tracking=true, kerning=true, spacing=true, factor=1100, stretch=10, shrink=10]{microtype}
+
+% bibliography management
+\usepackage[round]{natbib}
+\usepackage[nottoc, notlot, notlof]{tocbibind}
+
+% improved version of amsmath
+\usepackage{mathtools}
+
+% standard AMS packages
+\usepackage{amssymb}
+
+% customize theorem-like environments
+\usepackage[amsmath, thref, thmmarks]{ntheorem}
+
+% import figures
+\usepackage{graphicx}
+
+% typeset programs (programming code)
+\usepackage{listings}
+
+% algorithm environments
+\usepackage{algpseudocode}
+\usepackage{algorithm}
+
+% easily customize the enumerate environment
+\usepackage{enumitem}
+
+% high quality tables
+\usepackage{booktabs}
+\usepackage{dcolumn}
+
+% create hyperlinks for urls and references
+\usepackage[colorlinks, citecolor=blue, urlcolor=blue, filecolor=blue]{hyperref}
+
+% -----------------------------------------------------------------------------
+% comment out the following packages once the manuscript is ready
+
+% placeholder text
+\usepackage{lipsum}
+
+% show labels and keys on the margin
+\usepackage{refcheck}
+
+% set line spacing
+\usepackage{setspace}
+%\singlespacing
+%\onehalfspacing
+\doublespacing
+\setstretch{1.1}
+
+% mark for easy detection overfull boxes
+\overfullrule=5pt
+
+% line numbers
+\usepackage[mathlines]{lineno}
+\linenumbers
+% -----------------------------------------------------------------------------
